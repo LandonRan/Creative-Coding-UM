@@ -8,6 +8,13 @@
 		width: 100%;
 		text-align: center;
 		}
+		spurn {
+		text-align: center
+		}
+		burn {
+		font-family:Times New Roman;
+		font-size:20px;
+		text-align: center;
 		</style>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,21 +22,29 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</head>
 	<body>
+		<br />
+		<br />
 		<form action="ftml.html" type="POST">
 		Name: <input type="text" id="Name"><br>
 		Email Address: <input type="text" id="Email"><br>
+		<br />
+		<br />
 		<span>
-		<h2 class="container-fluid"> Do you accept the terms of service? </h2>
+		<spurn>
+		<h2 class="container p-3 my-3 bg-dark text-white"> Do you accept the terms of service? </h2>
+		</spurn>
 		</span>
+		<burn>
 		<input type="radio" name="YN" value="Yes">Yes<br>
 		<input type="radio" name="YN" value="No">No<br>
+		</burn>
 		<br />
 		<br />
 		<br />
 		<button id="mySubmit" type="submit">Submit</button>
 		<br />
 		<br />
-		<h2>
+		<h2 class="container p-3 my-3 bg-dark">
 		<a href="html.html" style="text-decoration:none" class="blueColor" target="_new">Return</a>
 		<br />
 		<a href="stml.html" style="text-decoration:none" id="Link2" target="_new">Or A Fun story!</a>
