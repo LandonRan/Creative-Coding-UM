@@ -1,0 +1,125 @@
+<html>
+	<head>
+		<title> Contact Innitiation </title>
+		<link rel="stylesheet" type="text/css" href="mainstyle.css">
+		<script>
+			function miss()
+			{
+				window.alert("Please Insert Something");
+			}
+			function missterm()
+			{
+				window.alert("Please Accept Or Deny The Terms Of Conditions")
+			}
+			function incheck() {
+				const nametext = document.getElementById("name");
+				const mailtext = document.getElementById("email");
+				const reqtext = document.getElementById("Required");
+				var Gmail = 0
+				var Game = 0
+				var Gaccept = 0
+				var Email = document.getElementById("email").value;
+				var Name = document.getElementById("name").value;
+				const YN = document.querySelector('input[name="YN"]:checked');
+				if (Name === "") {
+					window.alert("Please Enter Your Name");
+					nametext.style.borderColor = "red"
+					Game = 1;
+				}
+				if (Email === "") {
+					window.alert("Please Enter Your Email");
+					mailtext.style.borderColor = "red"
+					Gmail = 1;
+				}
+				
+				if (!YN) {
+					window.alert("Please Accept Or Deny The Terms Of Service");
+					document.getElementById("Required").innerHTML = "*Required";
+					reqtext.style.textColor = "red"
+					Gaccept = 1;
+				}
+				if (Game === 1 || Gmail === 1 || Gaccept === 1) {
+					return;
+				}
+				window.location.href = "ftml.html";
+			}
+			function check()
+			{
+				incheck();
+			}
+		</script>
+		<style>
+		h1 {
+  		text-decoration: underline overline;
+		font-size:50px;
+		}
+		a {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		}
+		spurn {
+		text-align: center
+		}
+		burn {
+		font-family:Times New Roman;
+		font-size:20x;
+		text-align: center;
+		</style>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<br />
+		<span4>
+		<h1> Please Enter Your Information </h1>
+		</span4>
+		<table>
+		<tr>
+			<td>Name:</td>
+			<td><input type="text" id="name"> </td>
+		</tr>
+		<tr>
+			<td>Email Address:</td>
+			<td><input type="text" id="email"> </td>
+		</tr>
+		</table>
+		<br />
+		<br />
+		<span>
+		<spurn>
+			<h2 class="container p-3 my-3 bg-dark text-white"> Do you accept the terms of service? </h2>
+		</spurn>
+		</span>
+		<burn>
+		<table>
+		<tr>
+		<span6>
+			<td><div id="Required"></div></td>
+		</span6>
+		</tr>
+		<tr>
+			<td><input type="radio" name="YN" value="Yes" id="Yes">Yes<br></td>
+		</tr>
+		<tr>
+			<td><input type="radio" name="YN" value="No" id="No">No<br></td>
+		</tr>
+		</burn>
+		<br />
+		<br />
+		<br />
+		<tr>
+			<td colspan="2"><button id="btnSubmit" onClick="check();">Submit</button></td>
+		</tr>
+		</table>
+		<br />
+		<br />
+		<h2 class="container p-3 my-3 bg-dark">
+		<a href="html.html" style="text-decoration:none" class="blueColor" target="_new">Return</a>
+		<br />
+		<a href="stml.html" style="text-decoration:none" id="Link2" target="_new">Or A Fun story!</a>
+		</h2>
+	</body>
+</html>
