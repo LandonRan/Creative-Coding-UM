@@ -1,19 +1,24 @@
   var x = 180;
   var xx = 25;
-  var xmove = 4;
-  var xxmove = 2;
+  var xmove;
+  var xxmove;
   var y = 150;
   var yy = 275;
-  var ymove = 6;
-  var yymove = 9;
+  var ymove;
+  var yymove;
   var xy = 75;
   var yx = 100;
-  var xymove = 5;
+  var xymove;
   var tet = 15;
   var tetg = 2.5;
 
 function setup() {
   createCanvas(300, 500);
+  xmove = floor(random() * 10) + 1;
+  xxmove = floor(random() * 10) + 1;
+  ymove = floor(random() * 10) + 1;
+  yymove = floor(random() * 10) + 1;
+  xymove = floor(random() * 10) + 1;
 }
 
 function draw() {
